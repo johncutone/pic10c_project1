@@ -7,6 +7,7 @@ Interface of a simple Card class
 #include <string>
 #include <vector>
 #include <fstream>
+#include <list>
 
 #ifndef CARDS_H
 #define CARDS_H
@@ -60,13 +61,13 @@ private:
 
 class Hand {
 public:
-	// A vector of Cards
+	// A list of Cards
 	Hand();
 
-	// You decide what functions you'll need...
+	//bool busted(Hand h);
 
 private:
-	// You decide what fields you'll need...
+	list<Card> cards;
 };
 
 

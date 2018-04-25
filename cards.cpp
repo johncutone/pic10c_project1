@@ -139,8 +139,15 @@ bool Card::operator < (Card card2) const {
 Hand class
 ************************************************* */
 // Implemente the member functions of the Hand class here.
+Hand::Hand() {
+	cards.front() = Card();
+}
 
-
+//bool Hand::busted(Hand h) {
+//	double sum = 0;
+//	for (list<Card>::iterator it = h.cards.front();
+//	
+//}
 
 /* *************************************************
 Player class
