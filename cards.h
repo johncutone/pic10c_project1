@@ -67,6 +67,7 @@ public:
 	double get_total();
 	void add_card();
 	void print_hand();
+	void print_last_card();
 
 private:
 	list<Card> cards;

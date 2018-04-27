@@ -218,8 +218,15 @@ void Hand::add_card() {
 // this function prints out your current hand
 void Hand::print_hand() {
 	for (list<Card>::iterator it = this->cards.begin(); it != this->cards.end(); it++) {
-		cout << "\t" << it->get_english_rank() << " of " << it->get_english_suit << endl;
+		cout << "\t" << it->get_english_rank() << " of " << it->get_english_suit() << endl;
 	}
+}
+
+// this function prints the last card in the hand
+// ends with a new line
+void Hand::print_last_card() {
+	Card last_card = cards.back();
+	cout << last_card.get_english_rank() << " of " << last_card.get_english_suit() << endl;
 }
 
 /* *************************************************
