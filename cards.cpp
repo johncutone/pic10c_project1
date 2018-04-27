@@ -159,8 +159,7 @@ double Hand::get_total() {
 
 
 // this function adds a new card to the end of the list of 
-// cards in the hand 	pic10c_project1.exe!std::_List_iterator<std::_List_val<std::_List_simple_types<Card> > >::operator*() Line 367	C++
-
+// cards in the hand 	
 void Hand::add_card() {
 	Card new_card = Card();
 	this->cards.push_back(new_card);
@@ -169,4 +168,4 @@ void Hand::add_card() {
 /* *************************************************
 Player class
 ************************************************* */
-// Implemente the member functions of the Player class here.
+
