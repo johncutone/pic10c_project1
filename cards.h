@@ -78,11 +78,9 @@ public:
 	//    Assigns initial amount of money
 	Player(int m);
 
-	// You decide what functions you'll need...
 
 private:
 	int money;
-	// You decide what extra fields (if any) you'll need...
 };
 
 #endif
