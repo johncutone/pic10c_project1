@@ -167,14 +167,30 @@ void Hand::add_card() {
 
 /* *************************************************
 Player class
-************************************************* */\
+************************************************* */
 // constructor for player, m is amount of money
 // player starts with
 Player::Player(int m) {
 	money = m;
 }
 
-int Player::current_balance() {}
-bool Player::make_bet(int m) {}
-void Player::win_bet(int m) {}
-void Player::lose_bet(int m) {}
+// function to access players current money balance
+int Player::current_balance() {
+	return money;
+}
+
+// function returns true if the player has at least m dollars 
+// in their balance
+bool Player::make_bet(int m) {
+	return (money >= m);
+}
+
+// function adds amount m to current balance
+void Player::win_bet(int m) {
+	money += m;
+}
+
+// function removes amount m from current balance
+void Player::lose_bet(int m) {
+	money -= m;
+}
