@@ -64,7 +64,8 @@ public:
 	// A list of Cards
 	Hand();
 
-	//bool busted(Hand h);
+	double get_total();
+	void add_card();
 
 private:
 	list<Card> cards;

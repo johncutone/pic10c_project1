@@ -18,6 +18,11 @@ using namespace std;
 
 // Stub for main
 int main() {
-	/* --STATEMENTS-- */
-	return 0;
+	Hand h = Hand();
+	while (h.get_total() < 7.5) {
+		cout << h.get_total() << endl;
+		h.add_card();
+	}
+	int x;
+	cin >> x;
 }

@@ -140,14 +140,31 @@ Hand class
 ************************************************* */
 // Implemente the member functions of the Hand class here.
 Hand::Hand() {
-	cards.front() = Card();
+	cards.push_back(Card());
 }
 
-//bool Hand::busted(Hand h) {
-//	double sum = 0;
-//	for (list<Card>::iterator it = h.cards.front();
-//	
-//}
+// This function is called on a hand and returns the total
+// sum of all cards in the hand
+double Hand::get_total() {
+	double sum = 0;
+	for (list<Card>::iterator it = this->cards.begin(); it != this->cards.end(); it++) {
+		if (it->get_rank() > 7)
+			sum += .5;
+		else
+			sum += it->get_rank();
+	}
+
+	return sum;
+}
+
+
+// this function adds a new card to the end of the list of 
+// cards in the hand 	pic10c_project1.exe!std::_List_iterator<std::_List_val<std::_List_simple_types<Card> > >::operator*() Line 367	C++
+
+void Hand::add_card() {
+	Card new_card = Card();
+	this->cards.push_back(new_card);
+}
 
 /* *************************************************
 Player class
