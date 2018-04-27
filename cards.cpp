@@ -167,7 +167,7 @@ void Hand::add_card() {
 
 /* *************************************************
 Player class
-************************************************* */\
+************************************************* */
 // constructor for player, m is amount of money
 // player starts with
 Player::Player(int m) {
