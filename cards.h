@@ -77,6 +77,10 @@ public:
 	// Constructor. 
 	//    Assigns initial amount of money
 	Player(int m);
+	int current_balance();
+	bool make_bet(int m);
+	void win_bet(int m);
+	void lose_bet(int m);
 
 
 private:

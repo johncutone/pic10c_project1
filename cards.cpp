@@ -138,7 +138,7 @@ bool Card::operator < (Card card2) const {
 /* *************************************************
 Hand class
 ************************************************* */
-// Implemente the member functions of the Hand class here.
+// Constructor for hand initializes first card
 Hand::Hand() {
 	cards.push_back(Card());
 }
@@ -167,7 +167,14 @@ void Hand::add_card() {
 
 /* *************************************************
 Player class
-************************************************* */
+************************************************* */\
+// constructor for player, m is amount of money
+// player starts with
 Player::Player(int m) {
 	money = m;
 }
+
+int Player::current_balance() {}
+bool Player::make_bet(int m) {}
+void Player::win_bet(int m) {}
+void Player::lose_bet(int m) {}
