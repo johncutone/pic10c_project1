@@ -7,22 +7,24 @@
 #include "cards.h"
 using namespace std;
 
-// Global constants (if any)
 
 
-// Non member functions declarations (if any)
-
-
-// Non member functions implementations (if any)
-
-
-// Stub for main
+// This main function plays the game
 int main() {
-	Hand h = Hand();
-	while (h.get_total() < 7.5) {
-		cout << h.get_total() << endl;
-		h.add_card();
+	cout << "Enter starting integer amount: ";
+	int start_amount;
+	cin >> start_amount;
+	cout << endl;
+
+	Player my_player(start_amount);
+
+	while (my_player.current_balance() > 0) {
+		cout << "You have " << my_player.current_balance() << " dollars" << endl;
+		Hand my_h = Hand();
+		bool keep_playing = true;
+		while (keep_playing == true) {
+			cout << "Your cards:" < , endl;
+
+		}
 	}
-	int x;
-	cin >> x;
 }
