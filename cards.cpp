@@ -160,7 +160,6 @@ double Hand::get_total() {
 
 // this function adds a new card to the end of the list of 
 // cards in the hand
-
 void Hand::add_card() {
 	Card new_card = Card();
 	this->cards.push_back(new_card);
